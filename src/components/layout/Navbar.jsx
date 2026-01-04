@@ -86,10 +86,10 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                     }`}
             >
-                <div className="bg-black/95 backdrop-blur-lg border-t border-white/10 px-5 py-6 space-y-3">
+                <div className="bg-black/95 backdrop-blur-lg border-t border-white/10 px-5 pt-6 pb-8 space-y-3">
                     {NAV_LINKS.map((link) => (
                         <button
                             key={link.id}
@@ -104,7 +104,7 @@ const Navbar = () => {
                     ))}
                     <button
                         onClick={() => handleNavClick('contact')}
-                        className="w-full px-7 py-3.5 bg-white text-[#212121] font-medium text-base rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300 mt-2"
+                        className="w-full px-7 py-3.5 cursor-pointer bg-none text-[#f3eeee] font-medium text-base rounded-[17px] border border-purple-500 hover:bg-purple-500/30 transition-all duration-300 mt-2"
                     >
                         Let's Connect
                     </button>

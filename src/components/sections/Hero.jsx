@@ -39,7 +39,7 @@ const Hero = () => {
                         <FadeIn delay={300}>
                             <button
                                 onClick={() => scrollToSection('contact')}
-                                className="inline-flex items-center gap-0 mb-12 group"
+                                className="hidden md:inline-flex items-center gap-0 mb-12 group"
                             >
                                 <div className="relative z-10 bg-white text-[#212121] rounded-[17px] px-[26px] py-[13px] text-base font-medium border border-white">
                                     Get in Touch
