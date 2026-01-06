@@ -7,7 +7,7 @@ export const projects = [
         category: 'Full Stack',
         technologies: ['React','JavaScript', 'Node.js', 'Stripe', 'AI', 'API'],
         metrics: '1500+ active users',
-        demoUrl: 'https://anatomija-ai.vercel.app/',
+        demoUrl: 'https://www.anatomy-ai.com/',
         githubUrl: 'https://github.com/milosadnadjevic/Ai-trainer'
     },
     {
