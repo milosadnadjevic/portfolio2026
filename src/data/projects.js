@@ -1,13 +1,13 @@
 export const projects = [
     {
         id: 1,
-        title: 'Anatomy Ai',
+        title: 'BodyCode',
         description: 'AI-powered fitness trainer that generates personalized workouts based on available equipment, injuries, and individual training constraints.',
-        image: '/images/projects/anatomy-mobile.png',
+        image: '/images/projects/bodycode.png',
         category: 'Full Stack',
         technologies: ['React','JavaScript', 'Node.js', 'Stripe', 'AI', 'API'],
         metrics: '1500+ active users',
-        demoUrl: 'https://www.anatomy-ai.com/',
+        demoUrl: 'https://body-code-henna.vercel.app/',
         githubUrl: 'https://github.com/milosadnadjevic/Ai-trainer'
     },
     {
