@@ -49,10 +49,10 @@ const Testimonials = () => {
                             <Quote className="w-4 h-4 text-primary" />
                             <span className="text-sm text-primary font-medium tracking-wider uppercase">Testimonials</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-xl mx-auto">
+                        <h2 className="text-4xl lg:text-5xl font-normal readable-title mb-4 max-w-xl mx-auto">
                             Trusted by forward-thinking teams
                         </h2>
-                        <p className="text-lg text-white/60 max-w-xl mx-auto">
+                        <p className="text-lg readable-body max-w-xl mx-auto">
                             Empowering clients with design-driven, high-quality solutions built for success.
                         </p>
                     </div>
@@ -103,17 +103,17 @@ const Testimonials = () => {
                                                     {/* Quote */}
                                                     <div className="mb-6">
                                                         <Quote className="w-7 h-7 text-primary mb-4 opacity-50" />
-                                                        <p className="text-lg md:text-xl text-white leading-relaxed">
+                                                        <p className="text-lg md:text-xl readable-body leading-relaxed">
                                                             "{testimonial.quote}"
                                                         </p>
                                                     </div>
 
                                                     <div className="flex items-center justify-between">
                                                         <div>
-                                                            <div className="text-white font-medium mb-1">
+                                                            <div className="readable-body font-medium mb-1">
                                                                 {testimonial.name}
                                                             </div>
-                                                            <div className="text-white/60 text-sm">
+                                                            <div className="readable-muted text-sm">
                                                                 {testimonial.role}, {testimonial.company}
                                                             </div>
                                                         </div>

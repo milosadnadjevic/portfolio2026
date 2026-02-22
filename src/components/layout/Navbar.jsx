@@ -54,7 +54,7 @@ const Navbar = () => {
                                 onClick={() => handleNavClick(link.id)}
                                 className={`text-base font-medium transition-all duration-300 ${activeSection === link.id
                                     ? 'text-white'
-                                    : 'text-white/70 hover:text-white'
+                                    : 'readable-muted hover:text-white'
                                     }`}
                             >
                                 {link.label}
@@ -66,7 +66,7 @@ const Navbar = () => {
                     <div className="hidden md:flex items-center gap-2">
                         <button
                             onClick={() => handleNavClick('contact')}
-                            className="px-7 py-3.5 cursor-pointer bg-none text-[#f3eeee] font-medium text-base rounded-[17px] border border-purple-500 hover:bg-purple-500/30 transition-all duration-300"
+                            className="px-7 py-3.5 cursor-pointer bg-none text-[#f3eeee] font-medium text-base rounded-[17px] border border-white/30 hover:bg-white/10 transition-all duration-300"
                         >
                             Let's Connect
                         </button>
@@ -96,7 +96,7 @@ const Navbar = () => {
                             onClick={() => handleNavClick(link.id)}
                             className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${activeSection === link.id
                                 ? 'text-white bg-white/10'
-                                : 'text-white/70 hover:text-white hover:bg-white/5'
+                                : 'readable-muted hover:text-white hover:bg-white/5'
                                 }`}
                         >
                             {link.label}
@@ -104,7 +104,7 @@ const Navbar = () => {
                     ))}
                     <button
                         onClick={() => handleNavClick('contact')}
-                        className="w-full px-7 py-3.5 cursor-pointer bg-none text-[#f3eeee] font-medium text-base rounded-[17px] border border-purple-500 hover:bg-purple-500/30 transition-all duration-300 mt-2"
+                        className="w-full px-7 py-3.5 cursor-pointer bg-none text-[#f3eeee] font-medium text-base rounded-[17px] border border-white/30 hover:bg-white/10 transition-all duration-300 mt-2"
                     >
                         Let's Connect
                     </button>

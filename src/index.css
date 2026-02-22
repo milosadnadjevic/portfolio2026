@@ -1,120 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Urbanist", sans-serif;
-  --breakpoint-3xl: 1920px;
-  --color-primary: #B69DFF;
+    --font-display: "Urbanist", sans-serif;
+    --breakpoint-3xl: 1920px;
+    --color-primary: #a3a3a3;
 }
 
 @layer base {
-  html {
-    font-family: var(--font-display);
-    scroll-behavior: smooth;
-  }
-
-  body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #000000;
-    color: #ffffff;
-    overflow-x: hidden;
-  }
-
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #0a0a0a;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #B69DFF, #9D7FFF);
-    border-radius: 5px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #CDB3FF, #8B5CFF);
-  }
-
-  /* Firefox Scrollbar */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #9D7FFF #0a0a0a;
-  }
-
-  /* Hide Scrollbar for Carousel */
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Animation Keyframes */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    html {
+        font-family: var(--font-display);
+        scroll-behavior: smooth;
     }
 
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes pulse {
-
-    0%,
-    100% {
-      opacity: 0.3;
-    }
-
-    50% {
-      opacity: 0.5;
-    }
-  }
-
-
-  /* Utility Classes */
-  .animate-fadeIn {
-    animation: fadeIn 0.5s ease-out;
-  }
-
-  .animate-pulse {
-    animation: pulse 3s ease-in-out infinite;
-  }
-
-  .animate-spin-slow {
-    animation: spin 8s linear infinite;
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #000000;
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.62)),
+            url("/linear-bg.png");
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed, fixed;
+        color: #ffffff;
+        overflow-x: hidden;
     }
 
-    to {
-      transform: rotate(360deg);
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
     }
-  }
 
-  /* Line Clamp */
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+    ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+    }
 
-  .line-clamp-3 {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #9ca3af, #6b7280);
+        border-radius: 5px;
+    }
 
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #d1d5db, #9ca3af);
+    }
+
+    /* Firefox Scrollbar */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #6b7280 #0a0a0a;
+    }
+
+    /* Hide Scrollbar for Carousel */
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse {
+        0%,
+        100% {
+            opacity: 0.3;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+    /* Utility Classes */
+    .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .animate-pulse {
+        animation: pulse 3s ease-in-out infinite;
+    }
+
+    .animate-spin-slow {
+        animation: spin 8s linear infinite;
+    }
+
+    .readable-title {
+        color: rgba(255, 255, 255, 0.96);
+        text-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.65),
+            0 0 14px rgba(0, 0, 0, 0.32);
+    }
+
+    .readable-body {
+        color: rgba(255, 255, 255, 0.84);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .readable-muted {
+        color: rgba(255, 255, 255, 0.74);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.44);
+    }
+
+    .readable-subtle {
+        color: rgba(255, 255, 255, 0.66);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.34);
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Line Clamp */
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }

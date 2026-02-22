@@ -11,7 +11,7 @@ const Contact = () => {
     };
 
   return (
-     <section id="contact" className="relative py-20 bg-black overflow-hidden">
+     <section id="contact" className="relative py-20 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 opacity-30 rounded-full blur-3xl" />
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/20 opacity-30 rounded-full blur-3xl" />
@@ -25,10 +25,10 @@ const Contact = () => {
                             <MessageSquare className="w-4 h-4 text-primary" />
                             <span className="text-sm text-primary font-medium tracking-wider uppercase">Get In Touch</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4">
+                        <h2 className="text-4xl lg:text-5xl font-normal readable-title mb-4">
                             Let's Work Together
                         </h2>
-                        <p className="text-lg text-white/60 max-w-2xl mx-auto">
+                        <p className="text-lg readable-body max-w-2xl mx-auto">
                             Have a project in mind? Let's discuss how we can bring your ideas to life.
                         </p>
                     </div>
@@ -36,7 +36,7 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-2 gap-12">
                     <FadeIn delay={100}>
-                        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+                        <div className="bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-2xl p-8">
                             <form action="https://getform.io/f/bolqzgga" method='POST' className="space-y-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
@@ -47,7 +47,7 @@ const Contact = () => {
                                         id="name"
                                         name="name"
                                         required
-                                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
+                                        className="w-full px-4 py-3 bg-black/85 bg-linear-to-b from-white/[0.05] to-black/92 border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-lg rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
                                         placeholder="Your name"
                                     />
                                 </div>
@@ -61,7 +61,7 @@ const Contact = () => {
                                         id="email"
                                         name="email"
                                         required
-                                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
+                                        className="w-full px-4 py-3 bg-black/85 bg-linear-to-b from-white/[0.05] to-black/92 border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-lg rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
                                         placeholder="your.email@example.com"
                                     />
                                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                                         name="message"
                                         required
                                         rows={5}
-                                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none"
+                                        className="w-full px-4 py-3 bg-black/85 bg-linear-to-b from-white/[0.05] to-black/92 border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-lg rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none"
                                         placeholder="Tell me about your project..."
                                     />
                                 </div>
@@ -95,16 +95,16 @@ const Contact = () => {
                     <FadeIn delay={200}>
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-2xl font-semibold text-white mb-4">
+                                <h3 className="text-2xl font-semibold readable-title mb-4">
                                     Let's Connect
                                 </h3>
-                                <p className="text-white/60 leading-relaxed">
+                                <p className="readable-body leading-relaxed">
                                     I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
                                 </p>
                             </div>
 
                             <div className="space-y-4">
-                                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                                <div className="group relative bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
                                     <div className="flex items-start gap-4">
                                         <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-xl">
                                             <Mail className="w-6 h-6 text-primary" />
@@ -113,7 +113,7 @@ const Contact = () => {
                                             <p className="text-sm text-white/60 mb-1">Email</p>
                                             <a
                                                 href={`mailto:${PERSONAL_INFO.email}`}
-                                                className="text-white hover:text-[#8f58fd] transition-colors font-medium"
+                                                className="text-white hover:text-primary transition-colors font-medium"
                                             >
                                                 {PERSONAL_INFO.email}
                                             </a>
@@ -122,7 +122,7 @@ const Contact = () => {
                                     <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-2xl transition-all duration-300 pointer-events-none" />
                                 </div>
 
-                                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+                                <div className="group relative bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
                                     <div className="flex items-start gap-4">
                                         <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-xl">
                                             <MapPin className="w-6 h-6 text-primary" />
@@ -147,7 +147,7 @@ const Contact = () => {
                                                 href={url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 group"
+                                                className="p-4 bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-xl hover:border-primary/50 hover:brightness-110 hover:scale-110 transition-all duration-300 group"
                                             >
                                                 <Icon className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" />
                                             </a>
