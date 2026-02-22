@@ -7,7 +7,7 @@ import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
             <RadialGradientBackground variant="hero" />
 
             {/* Content Container */}
@@ -25,13 +25,13 @@ const Hero = () => {
                         </FadeIn>
 
                         <FadeIn delay={100}>
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal readable-title mb-6 leading-tight">
                                 Hi, I'm Milos
                             </h1>
                         </FadeIn>
 
                         <FadeIn delay={200}>
-                            <p className="text-lg text-white/70 max-w-[550px] mb-8">
+                            <p className="text-lg readable-body max-w-[550px] mb-8">
                                 Building modern, scalable web applications with React, JavaScript, and cutting-edge technologies. Transforming ideas into exceptional digital experiences.
                             </p>
                         </FadeIn>
@@ -54,7 +54,7 @@ const Hero = () => {
                                         <div className="text-2xl font-normal text-primary mb-2 font-mono">
                                             {stat.value}
                                         </div>
-                                        <p className="text-sm text-white leading-snug">
+                                        <p className="text-sm readable-body leading-snug">
                                             {stat.label}
                                         </p>
                                     </div>

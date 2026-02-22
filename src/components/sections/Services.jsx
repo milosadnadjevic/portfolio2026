@@ -1,11 +1,12 @@
 import React from "react";
 import { services } from "../../data/services";
-import * as Icons from "lucide-react";
-import { Wrench } from "lucide-react";
+import { Wrench, Layout, Smartphone, Palette, Code2, Zap, GitBranch } from "lucide-react";
 import FadeIn from "../animations/FadeIn";
 
+const iconMap = { Layout, Smartphone, Palette, Code2, Zap, GitBranch };
+
 const Services = () => {
-  return <section id="services" className="relative py-20 bg-black overflow-hidden">
+  return <section id="services" className="relative py-20 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 opacity-20 rounded-full blur-3xl" />
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/20 opacity-20 rounded-full blur-3xl" />
@@ -30,10 +31,10 @@ const Services = () => {
                             <Wrench className="w-4 h-4 text-primary" />
                             <span className="text-sm text-primary font-medium tracking-wider uppercase">What I Offer</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-2xl mx-auto">
+                        <h2 className="text-4xl lg:text-5xl font-normal readable-title mb-4 max-w-2xl mx-auto">
                             Built for innovation. Designed for results.
                         </h2>
-                        <p className="text-lg text-white/60 max-w-xl mx-auto">
+                        <p className="text-lg readable-body max-w-xl mx-auto">
                             Comprehensive solutions to transform your ideas into exceptional digital experiences.
                         </p>
                     </div>
@@ -41,10 +42,10 @@ const Services = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
                     {services.slice(0, 2).map((service, index) => {
-                        const IconComponent = Icons[service.icon] || Icons.Code2;
+                        const IconComponent = iconMap[service.icon] || Code2;
                         return (
                             <FadeIn key={service.id} delay={100 + index * 100}>
-                                <div className="group relative bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-primary/30 transition-all duration-300 h-full min-h-[280px] flex flex-col">
+                                <div className="group relative bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-3xl p-8 hover:border-primary/30 transition-all duration-300 h-full min-h-[280px] flex flex-col">
                                     <div className="mb-6">
                                         <div className="w-16 h-16 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                             <IconComponent className="w-8 h-8 text-primary" />
@@ -69,10 +70,10 @@ const Services = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {services.slice(2).map((service, index) => {
-                        const IconComponent = Icons[service.icon] || Icons.Code2;
+                        const IconComponent = iconMap[service.icon] || Code2;
                         return (
                             <FadeIn key={service.id} delay={300 + index * 100}>
-                                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
+                                <div className="group relative bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                                     <div className="mb-4">
                                         <div className="w-12 h-12 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                             <IconComponent className="w-6 h-6 text-primary" />

@@ -5,7 +5,7 @@ const ProjectCard = ({project}) => {
     const { title, description, image, technologies, metrics, demoUrl, githubUrl } = project;
 
   return (
-     <div className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-300">
+     <div className="group relative bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-300">
             <div className="relative h-64 overflow-hidden">
                 <img
                     src={image}

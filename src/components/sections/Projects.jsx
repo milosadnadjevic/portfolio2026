@@ -55,7 +55,7 @@ const Projects = () => {
     };
 
   return (
-    <section id="projects" className="relative py-20 bg-black overflow-hidden">
+    <section id="projects" className="relative py-20 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/3 right-0 w-96 h-96 bg-primary/20 opacity-20 rounded-full blur-3xl" />
                 <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-primary/20 opacity-20 rounded-full blur-3xl" />
@@ -69,10 +69,10 @@ const Projects = () => {
                             <Briefcase className="w-4 h-4 text-primary" />
                             <span className="text-sm text-primary font-medium">My Work</span>
                         </div>
-                        <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4">
+                        <h2 className="text-4xl lg:text-5xl font-normal readable-title mb-4">
                             Featured Projects
                         </h2>
-                        <p className="text-lg text-white/60 max-w-2xl mx-auto">
+                        <p className="text-lg readable-body max-w-2xl mx-auto">
                             Showcasing my recent work and achievements
                         </p>
                     </div>
@@ -86,13 +86,13 @@ const Projects = () => {
                                 key={category}
                                 onClick={() => handleCategoryChange(category)}
                                 className={`group relative px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeCategory === category
-                                    ? 'text-white'
-                                    : 'text-white/60 hover:text-white'
+                                    ? 'readable-body'
+                                    : 'readable-muted hover:text-white'
                                     }`}
                             >
                                 <div className={`absolute inset-0 rounded-full transition-all duration-300 ${activeCategory === category
                                     ? 'bg-primary/10 opacity-100'
-                                    : 'bg-white/5 border border-white/10 group-hover:bg-white/10'
+                                    : 'bg-black/90 bg-linear-to-b from-white/[0.06] via-black/92 to-black/98 backdrop-blur-xl border border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.10),inset_0_-1px_0_rgba(255,255,255,0.03),0_20px_36px_rgba(0,0,0,0.55)] group-hover:border-white/30 group-hover:brightness-110'
                                     }`} />
 
                                 <div className="relative flex items-center gap-2">

@@ -11,7 +11,7 @@ import Footer from "./components/layout/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Navbar />
 
       <main>

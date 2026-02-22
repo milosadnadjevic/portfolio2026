@@ -104,7 +104,7 @@ const Footer = () => {
                 <FadeIn delay={300}>
                     <div className="pt-1 border-none border-white/1">
                         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                            <p className="text-white/50 text-sm">
+                            <p className="readable-subtle text-sm">
                                 © {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
                             </p>
 
